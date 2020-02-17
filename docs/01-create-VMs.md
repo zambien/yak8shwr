@@ -47,6 +47,7 @@ Let's create the base `Vagrantfile` and have it create one VM so we can see how 
 
 ```bash
 {
+
 cat > Vagrantfile <<EOF
 API_VERSION = 2
 
@@ -68,6 +69,7 @@ end
 EOF
 
 vagrant up
+
 }
 ```
 

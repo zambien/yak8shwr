@@ -141,7 +141,6 @@ done
 #### Controller Manager Client Cert
 
 ```bash
-
 {
 
 cat > pki/controller/kube-controller-manager-csr.json <<EOF
@@ -171,7 +170,6 @@ cfssl gencert \
    pki/controller/kube-controller-manager-csr.json | cfssljson -bare  pki/controller/kube-controller-manager
 
 }
-
 ```
 
 
@@ -180,7 +178,6 @@ cfssl gencert \
 Generate the `kube-proxy` client certificate and private key:
 
 ```bash
-
 {
 
 cat > pki/proxy/kube-proxy-csr.json <<EOF
@@ -210,7 +207,6 @@ cfssl gencert \
   pki/proxy/kube-proxy-csr.json | cfssljson -bare pki/proxy/kube-proxy
 
 }
-
 ```
 
 ### The Scheduler Client Certificate
@@ -218,7 +214,6 @@ cfssl gencert \
 Generate the `kube-scheduler` client certificate and private key:
 
 ```bash
-
 {
 
 cat > pki/scheduler/kube-scheduler-csr.json <<EOF
@@ -248,7 +243,6 @@ cfssl gencert \
   pki/scheduler/kube-scheduler-csr.json | cfssljson -bare pki/scheduler/kube-scheduler
 
 }
-
 ```
 
 
@@ -259,7 +253,6 @@ The KUBERNETES_PUBLIC_ADDRESS will be the IP/VIP/Pool IP of the load balancer th
 Generate the Kubernetes API Server certificate and private key:
 
 ```bash
-
 {
 
 KUBERNETES_PUBLIC_ADDRESS=10.0.0.30
@@ -293,7 +286,6 @@ cfssl gencert \
   pki/api/kubernetes-csr.json | cfssljson -bare pki/api/kubernetes
 
 }
-
 ```
 
 > The Kubernetes API server is automatically assigned the `kubernetes` internal dns name, which will be linked to the first IP address (`10.32.0.1`) from the address range (`10.32.0.0/24`) reserved for internal cluster services during the [control plane bootstrapping](08-bootstrapping-kubernetes-controllers.md#configure-the-kubernetes-api-server) lab.
@@ -306,7 +298,6 @@ The Kubernetes Controller Manager leverages a key pair to generate and sign serv
 Generate the `service-account` certificate and private key:
 
 ```bash
-
 {
 
 cat > pki/service-account/service-account-csr.json <<EOF
@@ -336,7 +327,6 @@ cfssl gencert \
   pki/service-account/service-account-csr.json | cfssljson -bare pki/service-account/service-account
 
 }
-
 ```
 
 

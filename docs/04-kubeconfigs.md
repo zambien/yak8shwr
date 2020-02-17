@@ -11,7 +11,6 @@ The KUBERNETES_PUBLIC_ADDRESS will be the IP/VIP/Pool IP of the load balancer th
 Then generate the configs:
 
 ```bash
-
 {
 
 KUBERNETES_PUBLIC_ADDRESS=10.0.0.30
@@ -35,13 +34,11 @@ kubectl config use-context default --kubeconfig=configs/clients/${instance}.kube
 done
 
 }
-
 ```
 
 #### Generate kube-proxy kubeconfig
 
 ```bash
-
 {
 
 KUBERNETES_PUBLIC_ADDRESS=10.0.0.30
@@ -63,13 +60,11 @@ kubectl config set-context default \
 kubectl config use-context default --kubeconfig=configs/proxy/kube-proxy.kubeconfig
 
 }
-
 ```
 
 #### Generate kube-controller-manager kubeconfig
 
 ```bash
-
 {
 
 kubectl config set-cluster yak8shwr-kubernetes \
@@ -89,13 +84,11 @@ kubectl config set-context default \
 kubectl config use-context default --kubeconfig=configs/controller/kube-controller-manager.kubeconfig
 
 }
-
 ```
 
 #### Generate kube-scheduler kubeconfig
 
 ```bash
-
 {
 
 kubectl config set-cluster yak8shwr-kubernetes \
@@ -115,13 +108,11 @@ kubectl config set-context default \
 kubectl config use-context default --kubeconfig=configs/scheduler/kube-scheduler.kubeconfig
 
 }
-
 ```
 
 #### Generate admin user kubeconfig
 
 ```bash
-
 {
 
 kubectl config set-cluster yak8shwr-kubernetes \
@@ -141,7 +132,6 @@ kubectl config set-context default \
 kubectl config use-context default --kubeconfig=admin.kubeconfig
 
 }
-
 ```
 
 ####Generate the data encryption key and config
@@ -149,7 +139,6 @@ kubectl config use-context default --kubeconfig=admin.kubeconfig
 This will be used for encrypting data between nodes.
 
 ```bash
-
 {
 
 mkdir -p data-encryption
@@ -171,7 +160,6 @@ resources:
 EOF
 
 }
-
 ```
 
 
