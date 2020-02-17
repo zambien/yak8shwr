@@ -47,6 +47,7 @@ Let's create the base `Vagrantfile` and have it create one VM so we can see how 
 
 ```bash
 {
+
 cat > Vagrantfile <<EOF
 API_VERSION = 2
 
@@ -68,6 +69,7 @@ end
 EOF
 
 vagrant up
+
 }
 ```
 
@@ -196,6 +198,9 @@ Vagrant.configure("2") do |config|
 		end
 	end
 
+	# Allow password auth
+	config.vm.provision 'shell', inline: 'sed -i "s/ChallengeResponseAuthentication no/ChallengeResponseAuthentication yes/g" /etc/ssh/sshd_config'
+	config.vm.provision 'shell', inline: 'service ssh restart'
 end
 EOF
 

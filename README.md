@@ -5,7 +5,7 @@ Yet Another Kubernetes the Hard Way Repo
 
 Kubernetes the Hard Way  using Vagrant and VirtualBox for **MAXIMUM LEARNING!11!!!!!!one!!?1!**
 
-This is an as-code implementation of Drew Viles' [medium article](https://medium.com/\@DrewViles/kubernetes-the-hard-way-on-bare-metal-vms-fdb32bc4fed0") which is heavily based upon Kelsey Hightower's legendary repo, [Kubernetes the Hard Way](https://github.com/kelseyhightower/kubernetes-the-hard-way).
+This is an as-code implementation of Drew Viles' [medium article](https://medium.com/\@DrewViles/kubernetes-the-hard-way-on-bare-metal-vms-fdb32bc4fed0") which is heavily based upon Kelsey Hightower's legendary repo, [Kubernetes the Hard Way](https://github.com/kelseyhightower/kubernetes-the-hard-way).  The format of this repo mimics and in some cases directly copies Kelsey Hightower's [Kubernetes the Hard Way](https://github.com/kelseyhightower/kubernetes-the-hard-way).
 
 After going through `Kubernetes the Hard Way` I felt a good appreciation for the aspects of configuring and running a kubernetes cluster.  But I wanted to leave it up so that I could play more and I'm cheap so I thought a local environment would be great to continue the learning while also learning how one might set this up in a local datacenter instead of a cloud provider.  This repo will be laid out in a similar fashion to Kelsey's with instructions on how to set this up step-by-step.
 
@@ -31,3 +31,7 @@ Note that all of the 100GB disk will not be used, however theoretically it could
 
 * [Prerequisites](docs/01-create-VMs.md)
 * [Install Tools](docs/02-install-tools.md)
+* [Certs and Stuff](docs/03-certs-and-stuff.md)
+* [Kubeconfig and Encryption Keys](docs/04-kubeconfigs.md)
+* [Setup Controllers](docs/05-setup-controllers.md)
+* [Configure the load balancer](docs/06-config-lb.md)

@@ -3,3 +3,10 @@ Vagrantfile
 *.log
 *.iml
 .idea
+*.json
+*.pem
+*.csr
+*.crt
+pki
+configs
+data-encryption
