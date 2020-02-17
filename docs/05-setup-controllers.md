@@ -397,4 +397,4 @@ EOF
 That's it.  The controllers are ready.
 
 
-Next: [Configure the load balancer](docs/06-config-lb.md)
+Next: [Configure the load balancer](06-config-lb.md)

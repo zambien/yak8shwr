@@ -175,4 +175,4 @@ EOF
 ```
 
 
-Next: [Setup Controllers](docs/05-setup-controllers.md)
+Next: [Setup Controllers](05-setup-controllers.md)

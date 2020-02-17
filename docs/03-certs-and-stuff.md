@@ -347,4 +347,4 @@ There is no need to copy the certs around since the project root folder is mount
 
 > The `kube-proxy`, `kube-controller-manager`, `kube-scheduler`, and `kubelet` client certificates will be used to generate client authentication configuration files in the next lab.
 
-Next: [Kubeconfig and Encryption Keys](docs/04-kubeconfigs.md)
+Next: [Kubeconfig and Encryption Keys](04-kubeconfigs.md)
