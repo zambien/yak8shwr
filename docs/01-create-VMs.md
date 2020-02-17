@@ -196,6 +196,9 @@ Vagrant.configure("2") do |config|
 		end
 	end
 
+	# Allow password auth
+	config.vm.provision 'shell', inline: 'sed -i "s/ChallengeResponseAuthentication no/ChallengeResponseAuthentication yes/g" /etc/ssh/sshd_config'
+	config.vm.provision 'shell', inline: 'service ssh restart'
 end
 EOF
 
