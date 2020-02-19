@@ -166,8 +166,8 @@ Vagrant.configure("2") do |config|
             node.vm.network :private_network, ip: "10.0.0.#{i + 10}"
 			node.vm.provider "virtualbox" do |v|
 				v.name = controller_vm_name_prefix + "#{i}"
-				v.memory = 2048
-				v.cpus = 2
+				v.memory = 1024
+				v.cpus = 1
 			end
 		end
 	end
@@ -193,8 +193,8 @@ Vagrant.configure("2") do |config|
 		node.vm.network :private_network, ip: "10.0.0.30"
 		node.vm.provider "virtualbox" do |v|
 			v.name = lb_vm_name
-			v.memory = 2048
-			v.cpus = 2
+			v.memory = 256
+			v.cpus = 1
 		end
 	end
 

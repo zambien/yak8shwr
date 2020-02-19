@@ -134,7 +134,7 @@ kubectl config use-context default --kubeconfig=admin.kubeconfig
 }
 ```
 
-####Generate the data encryption key and config
+#### Generate the data encryption key and config
 
 This will be used for encrypting data between nodes.
 

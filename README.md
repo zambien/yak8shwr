@@ -25,7 +25,7 @@ yak8shwr guides you through bootstrapping a highly available Kubernetes cluster 
 
 ## Labs
 
-This tutorial assumes you have a computer with at least 6 cores, 100GB disk space, and 16GB RAM and that you are working on a system with a good native shell.  I used linux so if this doesn't work on a Mac I'm sorry.
+This tutorial assumes you have a computer with at least 4 cores, 100GB disk space, and 8GB RAM and that you are working on a system with a good native shell.  I used linux so if this doesn't work on a Mac I'm sorry.
 
 Note that all of the 100GB disk will not be used, however theoretically it could.
 
