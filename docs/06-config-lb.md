@@ -57,11 +57,11 @@ defaults
     errorfile 503 /etc/haproxy/errors/503.http
     errorfile 504 /etc/haproxy/errors/504.http
 
-frontend k8s
+frontend k8s_api
     bind 10.0.0.30:6443
-    default_backend k8s_backend
+    default_backend k8s_api_backend
 
-backend k8s_backend
+backend k8s_api_backend
     balance roundrobin
     mode tcp
     server controller-0 10.0.0.10:6443 check inter 1000
@@ -72,7 +72,7 @@ EOF
 }
 ```
 
-Now we restart: `sudo service haproxy status`
+Now we restart: `sudo service haproxy restart`
 
 And test that it is running fine: `sudo service haproxy status`
 

@@ -35,3 +35,4 @@ Note that all of the 100GB disk will not be used, however theoretically it could
 * [Kubeconfig and Encryption Keys](docs/04-kubeconfigs.md)
 * [Setup Controllers](docs/05-setup-controllers.md)
 * [Configure the load balancer](docs/06-config-lb.md)
+* [Setup Workers](docs/07-setup-workers.md)
