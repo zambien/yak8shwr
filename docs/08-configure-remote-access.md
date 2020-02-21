@@ -34,4 +34,4 @@ We should now be able to run `kubectl` commands with admin rights:
 `kubectl get componentstatuses`
 
 
-Next: [Configuring kubectl for Remote Access](10-configuring-kubectl.md)
+Next: [Setup DNS](docs/09-setup-dns.md)

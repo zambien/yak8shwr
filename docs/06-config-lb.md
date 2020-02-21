@@ -86,5 +86,4 @@ content-length: 2
 date: Wed, 19 Feb 2020 02:26:39 GMT
 ```
 
-Next: [Configure the load balancer](docs/06-config-lb.md)
-
+Next: [Setup Workers](07-setup-workers.md)

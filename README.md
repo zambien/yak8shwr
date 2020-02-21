@@ -36,3 +36,6 @@ Note that all of the 100GB disk will not be used, however theoretically it could
 * [Setup Controllers](docs/05-setup-controllers.md)
 * [Configure the load balancer](docs/06-config-lb.md)
 * [Setup Workers](docs/07-setup-workers.md)
+* [Configure Remote Access](docs/08-configure-remote-access.md)
+* [Setup DNS](docs/09-setup-dns.md)
+

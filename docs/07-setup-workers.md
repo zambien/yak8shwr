@@ -319,4 +319,4 @@ k8s-worker-1   Ready    <none>   15s   v1.15.3
 k8s-worker-2   Ready    <none>   15s   v1.15.3
 ```
 
-Next: [Configuring kubectl for Remote Access](10-configuring-kubectl.md)
+Next: [Configure Remote Access](08-configure-remote-access.md)
