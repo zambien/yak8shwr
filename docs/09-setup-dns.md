@@ -6,7 +6,9 @@ We are going to use kube-router.
 
 Apply kube-router on your main host:
 
-`kubectl apply -f https://raw.githubusercontent.com/cloudnativelabs/kube-router/master/daemonset/generic-kuberouter.yaml`
+```bash
+kubectl apply -f https://raw.githubusercontent.com/cloudnativelabs/kube-router/master/daemonset/generic-kuberouter.yaml
+```
 
 Verify it works... Depending on how fast you are you may see the router move from initializing to running.
 

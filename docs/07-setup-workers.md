@@ -316,7 +316,7 @@ vagrant ssh k8s-controller-0 \
 
 > output
 
-```
+```bash
 NAME       STATUS   ROLES    AGE   VERSION
 k8s-worker-0   Ready    <none>   15s   v1.15.3
 k8s-worker-1   Ready    <none>   15s   v1.15.3

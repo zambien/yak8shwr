@@ -31,7 +31,9 @@ cp configs/admin/admin-remote.kubeconfig ~/.kube/config
 
 We should now be able to run `kubectl` commands with admin rights:
 
-`kubectl get componentstatuses`
+```bash
+kubectl get componentstatuses
+```
 
 
 Next: [Setup DNS](docs/09-setup-dns.md)

@@ -2,7 +2,9 @@
 
 First, let's create a folder for our configs:
 
-`mkdir -p configs`
+```bash
+mkdir -p configs
+```
 
 #### Generate worker kubeconfigs
 

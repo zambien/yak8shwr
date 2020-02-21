@@ -12,7 +12,9 @@ https://www.virtualbox.org/wiki/Downloads
 
 We will run Ubuntu for this tutorial so the first thing to do is download the 18.04 box.  We'll be using the official ubuntu release.  In order to download the box, run:
 
-`vagrant box add "ubuntu/bionic64"`
+```bash
+vagrant box add "ubuntu/bionic64"
+```
 
 This will take some time depending upon your connection.  After a while you should see it finish:
 
@@ -110,7 +112,9 @@ Bringing machine 'k8s-load-balancer' up with 'virtualbox' provider...
 
 Now we can connect to the box.  Let's test our connection:
 
-`vagrant ssh k8s-load-balancer`
+```bash
+vagrant ssh k8s-load-balancer`
+```
 
 Great, it worked!
 
@@ -139,7 +143,9 @@ vagrant@k8s-load-balancer:~$
 
 Now, let's get rid of this box so we can create the full set of 7.  Exit the ssh session and run:
 
-`vagrant destroy -f`
+```bash
+vagrant destroy -f
+```
 
 ## The Vagrantfile, creating multiple boxes.
 
@@ -237,7 +243,6 @@ k8s-load-balancer         running (virtualbox)
 This environment represents multiple VMs. The VMs are all listed
 above with their current state. For more information about a specific
 VM, run `vagrant status NAME`.
-
 ```
 
 We need a couple of packages installed on our controllers and workers. Normally, we would use a Vagrant provisioner but for this exercise it is important to understand every step so we will run this ourselves:
