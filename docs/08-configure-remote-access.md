@@ -36,4 +36,4 @@ kubectl get componentstatuses
 ```
 
 
-Next: [Setup DNS](docs/09-setup-dns.md)
+Next: [Setup DNS](09-setup-dns.md)
