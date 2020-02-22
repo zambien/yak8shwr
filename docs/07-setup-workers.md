@@ -98,7 +98,7 @@ Each worker needs a slice of that CIDR so we will use the format: 10.200.x.0/24 
 You will need to set the POD_CIDR on each node.  You can do so by running:
 
 ```bash
-POD_CIDR="echo 10.200.`hostname | tail -c 2`.0/24"
+POD_CIDR="10.200.`hostname | tail -c 2`.0/24"
 ```
 
 Now we have a POD_CIDR set for each worker host that is different. Verify by running:

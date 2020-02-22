@@ -57,4 +57,4 @@ We should now be able to run `kubectl` commands with admin rights:
 `kubectl get componentstatuses`
 
 
-Next: [Configuring kubectl for Remote Access](10-configuring-kubectl.md)
+Next: [Test it all](10-test-it.md)

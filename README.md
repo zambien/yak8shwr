@@ -38,4 +38,6 @@ Note that all of the 100GB disk will not be used, however theoretically it could
 * [Setup Workers](docs/07-setup-workers.md)
 * [Configure Remote Access](docs/08-configure-remote-access.md)
 * [Setup DNS](docs/09-setup-dns.md)
+* [Test it all](docs/10-test-it.md)
+* [Cleaning Up](docs/11-cleanup.md)
 
