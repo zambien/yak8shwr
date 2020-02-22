@@ -31,7 +31,9 @@ cp configs/admin/admin-remote.kubeconfig ~/.kube/config
 
 We should now be able to run `kubectl` commands with admin rights:
 
-`kubectl get componentstatuses`
+```bash
+kubectl get componentstatuses
+```
 
 
-Next: [Configuring kubectl for Remote Access](10-configuring-kubectl.md)
+Next: [Setup DNS](09-setup-dns.md)
